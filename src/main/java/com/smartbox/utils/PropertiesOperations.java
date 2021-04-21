@@ -9,13 +9,13 @@ public class PropertiesOperations {
 
     static Properties prop = new Properties();
 
-    public static String getPropertyValueByKey(String key) {
+    public static String getPropertyValue(String key) {
 
         String propFilePath = System.getProperty("user.dir")+"/src/main/resources/config.properties";
-        FileInputStream fis;
+        FileInputStream inputStream;
         try {
-            fis = new FileInputStream(propFilePath);
-            prop.load(fis);
+            inputStream = new FileInputStream(propFilePath);
+            prop.load(inputStream);
         } catch (Exception e) {
             e.printStackTrace();
         }

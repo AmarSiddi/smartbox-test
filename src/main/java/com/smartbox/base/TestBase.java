@@ -10,8 +10,8 @@ public class TestBase {
 
     @BeforeMethod
     public void LaunchApplication() throws Exception {
-        String browser = PropertiesOperations.getPropertyValueByKey("browser");
-        String url = 	PropertiesOperations.getPropertyValueByKey("url");
+        String browser = PropertiesOperations.getPropertyValue("browser");
+        String url = 	PropertiesOperations.getPropertyValue("url");
 
         DriverFactory.getInstance().setDriver(browserFactory.browserInstance(browser));
 
