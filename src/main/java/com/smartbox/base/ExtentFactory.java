@@ -2,6 +2,10 @@ package com.smartbox.base;
 
 import com.aventstack.extentreports.ExtentTest;
 
+/**@author Amarnath
+ * ExtentFactory class helps to generate a singleton instance for Extent Report operations.
+ */
+
 public class ExtentFactory {
 
     private ExtentFactory() {
@@ -14,7 +18,7 @@ public class ExtentFactory {
         return instance;
     }
 
-    ThreadLocal<ExtentTest> extent = new ThreadLocal<ExtentTest>();
+    ThreadLocal<ExtentTest> extent = new ThreadLocal<>();
 
     public ExtentTest getExtent() {
         return extent.get();

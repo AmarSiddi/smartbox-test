@@ -5,6 +5,10 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+/**@author Amarnath
+ * PropertiesOperations class used to perform the operations on the .properties file.
+ */
+
 public class PropertiesOperations {
 
     static Properties prop = new Properties();

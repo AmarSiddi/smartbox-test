@@ -7,6 +7,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+/**@author Amarnath
+ * SeleniumWaits class used to implement all types of waits required for the project.
+ */
+
 public class SeleniumWaits {
 
     WebDriverWait wait;

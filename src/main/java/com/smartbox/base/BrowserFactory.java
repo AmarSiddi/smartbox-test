@@ -9,6 +9,13 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 
+import java.time.Duration;
+
+/**
+ * @author Amarnath
+ * BrowserFactory class is used to initialise the required browser instances.
+ */
+
 public class BrowserFactory {
 
     public WebDriver browserInstance(String browser) {
@@ -18,7 +25,6 @@ public class BrowserFactory {
         if (browser.equalsIgnoreCase("chrome")) {
 
             WebDriverManager.chromedriver().setup();
-            //System.setProperty("webdriver.chrome.silentOutput", "true");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--incognito");
             //options.addArguments("--headless");
@@ -43,6 +49,9 @@ public class BrowserFactory {
 
         assert driver != null;
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+
         return driver;
     }
 

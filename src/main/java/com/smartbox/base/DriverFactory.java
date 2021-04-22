@@ -2,8 +2,17 @@ package com.smartbox.base;
 
 import org.openqa.selenium.WebDriver;
 
+
+/**
+ * @author Amarnath
+ *
+ * DriverFactory class is used to generate a single driver instance.
+ * This will help during the parallel thread execution.
+ */
+
 public class DriverFactory {
 
+    //Singleton Design Pattern
     private DriverFactory() {
     }
 

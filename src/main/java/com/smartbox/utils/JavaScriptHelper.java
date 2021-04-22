@@ -5,6 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+/**@author Amarnath
+ *
+ * JavaScript executor operations are implemented here
+ */
+
 public class JavaScriptHelper {
 
     JavascriptExecutor executor;

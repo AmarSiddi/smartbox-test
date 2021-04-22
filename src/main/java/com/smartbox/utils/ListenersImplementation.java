@@ -9,6 +9,11 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+/**@author Amarnath
+ * ListenersImplementation class will help to log all the test run activity.
+ * These logs and activities are strored in the extent report, present in the /smartbox-test/reports directory
+ */
+
 public class ListenersImplementation implements ITestListener {
 
     static ExtentReports report;

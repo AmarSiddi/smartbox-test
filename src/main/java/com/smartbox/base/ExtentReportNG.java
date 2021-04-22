@@ -8,6 +8,10 @@ import com.smartbox.utils.PropertiesOperations;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**@author Amarnath
+ * ExtentReportNG class used to configure report profile and storing generated report a specific file.
+ */
+
 public class ExtentReportNG {
 
     static ExtentReports extent;
